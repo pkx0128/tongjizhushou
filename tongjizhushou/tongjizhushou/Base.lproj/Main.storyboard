@@ -142,11 +142,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7W9-vO-pXX">
-                                <rect key="frame" x="252" y="144" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R9k-1H-rAB">
                                 <rect key="frame" x="252" y="190" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -207,6 +202,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7W9-vO-pXX">
+                                <rect key="frame" x="252" y="139" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -237,6 +237,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="MYG-wo-b3z" secondAttribute="trailing" id="yxq-li-NHG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="F100" destination="m7E-HH-UAz" id="VDb-BE-QX2"/>
+                        <outlet property="F50" destination="kuz-Fa-77D" id="U50-XT-Igq"/>
+                        <outlet property="T01" destination="Yfo-7X-sWl" id="Np9-ky-qwR"/>
+                        <outlet property="T05" destination="vJR-5f-nV1" id="QAJ-lA-QTU"/>
+                        <outlet property="T1" destination="Qvm-5d-b02" id="dYw-lO-Qf5"/>
+                        <outlet property="T10" destination="R9k-1H-rAB" id="BtI-Of-pJ5"/>
+                        <outlet property="T100" destination="m7E-HH-UAz" id="fLg-B6-Zgs"/>
+                        <outlet property="T20" destination="7W9-vO-pXX" id="CZ9-sM-IPi"/>
+                        <outlet property="T5" destination="pJF-fW-A1R" id="1BV-NA-XWg"/>
+                        <outlet property="T50" destination="kuz-Fa-77D" id="Mkn-Rn-pKe"/>
+                        <outlet property="startMoney" destination="3kH-ss-UTZ" id="CLF-EL-WZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
