@@ -20,6 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var T01: UITextField!
     @IBOutlet weak var startMoney: UITextField!
     
+    //连接Label
+    @IBOutlet weak var L100: UILabel!
+    @IBOutlet weak var L50: UILabel!
+    @IBOutlet weak var L20: UILabel!
+    @IBOutlet weak var L10: UILabel!
+    @IBOutlet weak var L5: UILabel!
+    @IBOutlet weak var L1: UILabel!
+    @IBOutlet weak var L05: UILabel!
+    @IBOutlet weak var L01: UILabel!
+    //总计
+    @IBOutlet weak var Lall: UILabel!
+    //需拿出的金额
+    @IBOutlet weak var Llast: UILabel!
+    //总数量
+    @IBOutlet weak var Lcount: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

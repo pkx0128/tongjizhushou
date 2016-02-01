@@ -240,6 +240,17 @@
                     <connections>
                         <outlet property="F100" destination="m7E-HH-UAz" id="VDb-BE-QX2"/>
                         <outlet property="F50" destination="kuz-Fa-77D" id="U50-XT-Igq"/>
+                        <outlet property="L01" destination="vNJ-Ud-OIu" id="UmM-a3-rM0"/>
+                        <outlet property="L05" destination="FnD-Ei-8Su" id="O35-Ho-uvn"/>
+                        <outlet property="L1" destination="c9z-3Q-RqL" id="kN9-fb-0d8"/>
+                        <outlet property="L10" destination="x37-s2-5e0" id="rok-7A-elg"/>
+                        <outlet property="L100" destination="kqK-1f-DwS" id="w14-gz-uHQ"/>
+                        <outlet property="L20" destination="dTc-9q-cUF" id="PjV-vN-9l4"/>
+                        <outlet property="L5" destination="Eqs-dc-bGs" id="vFf-FF-4m5"/>
+                        <outlet property="L50" destination="grA-UX-qzL" id="Seg-I3-3LF"/>
+                        <outlet property="Lall" destination="PTW-BI-R7h" id="kvF-b2-e92"/>
+                        <outlet property="Lcount" destination="eQi-lN-1mA" id="s13-Da-Hkg"/>
+                        <outlet property="Llast" destination="MYG-wo-b3z" id="KtJ-hs-MWw"/>
                         <outlet property="T01" destination="Yfo-7X-sWl" id="Np9-ky-qwR"/>
                         <outlet property="T05" destination="vJR-5f-nV1" id="QAJ-lA-QTU"/>
                         <outlet property="T1" destination="Qvm-5d-b02" id="dYw-lO-Qf5"/>
