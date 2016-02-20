@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F88B5D81C6D0D8D0082681D /* numFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88B5D71C6D0D8D0082681D /* numFunc.swift */; };
 		4FF7427B1C5F48F5007A700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7427A1C5F48F5007A700A /* AppDelegate.swift */; };
 		4FF7427D1C5F48F5007A700A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7427C1C5F48F5007A700A /* ViewController.swift */; };
 		4FF742801C5F48F5007A700A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF7427E1C5F48F5007A700A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F88B5D71C6D0D8D0082681D /* numFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numFunc.swift; sourceTree = "<group>"; };
 		4FF742771C5F48F5007A700A /* tongjizhushou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tongjizhushou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF7427A1C5F48F5007A700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF7427C1C5F48F5007A700A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				4FF742811C5F48F5007A700A /* Assets.xcassets */,
 				4FF742831C5F48F5007A700A /* LaunchScreen.storyboard */,
 				4FF742861C5F48F5007A700A /* Info.plist */,
+				4F88B5D71C6D0D8D0082681D /* numFunc.swift */,
 			);
 			path = tongjizhushou;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				4FF7427D1C5F48F5007A700A /* ViewController.swift in Sources */,
 				4FF7427B1C5F48F5007A700A /* AppDelegate.swift in Sources */,
+				4F88B5D81C6D0D8D0082681D /* numFunc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				4FF742A11C5F48F5007A700A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FF742A21C5F48F5007A700A /* Build configuration list for PBXNativeTarget "tongjizhushouTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				4FF742A41C5F48F5007A700A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FF742A51C5F48F5007A700A /* Build configuration list for PBXNativeTarget "tongjizhushouUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				4FF742A71C5F48F5007A700A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

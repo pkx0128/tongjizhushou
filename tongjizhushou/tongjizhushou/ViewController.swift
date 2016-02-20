@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UITextFieldDelegate {
     //连接textField
     @IBOutlet weak var T100: UITextField!
     @IBOutlet weak var T50: UITextField!
@@ -40,7 +40,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    //实现点ＴextFiel外区域隐藏键盘
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+
+        T100.resignFirstResponder();
+        T50.resignFirstResponder();
+        T20.resignFirstResponder();
+        T10.resignFirstResponder();
+        T5.resignFirstResponder();
+        T1.resignFirstResponder();
+        T05.resignFirstResponder();
+        T01.resignFirstResponder();
+        startMoney.resignFirstResponder();
         
     }
 
