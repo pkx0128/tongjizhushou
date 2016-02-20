@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		4F88B5D71C6D0D8D0082681D /* numFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numFunc.swift; sourceTree = "<group>"; };
-		4FF742771C5F48F5007A700A /* tongjizhushou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tongjizhushou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF742771C5F48F5007A700A /* 统计助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "统计助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF7427A1C5F48F5007A700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF7427C1C5F48F5007A700A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FF7427F1C5F48F5007A700A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		4FF742781C5F48F5007A700A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FF742771C5F48F5007A700A /* tongjizhushou.app */,
+				4FF742771C5F48F5007A700A /* 统计助手.app */,
 				4FF7428B1C5F48F5007A700A /* tongjizhushouTests.xctest */,
 				4FF742961C5F48F5007A700A /* tongjizhushouUITests.xctest */,
 			);
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4FF742761C5F48F5007A700A /* tongjizhushou */ = {
+		4FF742761C5F48F5007A700A /* 统计助手 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FF7429F1C5F48F5007A700A /* Build configuration list for PBXNativeTarget "tongjizhushou" */;
+			buildConfigurationList = 4FF7429F1C5F48F5007A700A /* Build configuration list for PBXNativeTarget "统计助手" */;
 			buildPhases = (
 				4FF742731C5F48F5007A700A /* Sources */,
 				4FF742741C5F48F5007A700A /* Frameworks */,
@@ -143,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = tongjizhushou;
+			name = "统计助手";
 			productName = tongjizhushou;
-			productReference = 4FF742771C5F48F5007A700A /* tongjizhushou.app */;
+			productReference = 4FF742771C5F48F5007A700A /* 统计助手.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4FF7428A1C5F48F5007A700A /* tongjizhushouTests */ = {
@@ -223,7 +223,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FF742761C5F48F5007A700A /* tongjizhushou */,
+				4FF742761C5F48F5007A700A /* 统计助手 */,
 				4FF7428A1C5F48F5007A700A /* tongjizhushouTests */,
 				4FF742951C5F48F5007A700A /* tongjizhushouUITests */,
 			);
@@ -289,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		4FF7428D1C5F48F5007A700A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FF742761C5F48F5007A700A /* tongjizhushou */;
+			target = 4FF742761C5F48F5007A700A /* 统计助手 */;
 			targetProxy = 4FF7428C1C5F48F5007A700A /* PBXContainerItemProxy */;
 		};
 		4FF742981C5F48F5007A700A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FF742761C5F48F5007A700A /* tongjizhushou */;
+			target = 4FF742761C5F48F5007A700A /* 统计助手 */;
 			targetProxy = 4FF742971C5F48F5007A700A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FF7429F1C5F48F5007A700A /* Build configuration list for PBXNativeTarget "tongjizhushou" */ = {
+		4FF7429F1C5F48F5007A700A /* Build configuration list for PBXNativeTarget "统计助手" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FF742A01C5F48F5007A700A /* Debug */,
