@@ -207,22 +207,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHj-1D-og4">
+                                <rect key="frame" x="16" y="550" width="46" height="30"/>
+                                <state key="normal" title="删除"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVP-Ob-uu9">
+                                <rect key="frame" x="542" y="550" width="30" height="30"/>
+                                <state key="normal" title="保存"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7W9-vO-pXX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3X8-gO-8NV"/>
                             <constraint firstItem="kuz-Fa-77D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="45p-gd-LU5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hHj-1D-og4" secondAttribute="bottom" constant="10" id="9Td-36-1NM"/>
                             <constraint firstItem="3kH-ss-UTZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQZ-MY-gVX"/>
                             <constraint firstItem="pJF-fW-A1R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IR9-sZ-eq3"/>
                             <constraint firstItem="vJR-5f-nV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NL8-9s-vdq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FnD-Ei-8Su" secondAttribute="trailing" id="PNi-CW-eqk"/>
                             <constraint firstItem="g3c-5p-n2r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Pdb-kf-Xbw"/>
                             <constraint firstItem="m7E-HH-UAz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwq-Zb-fIr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TVP-Ob-uu9" secondAttribute="trailing" id="SlX-KB-mLN"/>
                             <constraint firstItem="uVd-99-yMQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9W-69-etX"/>
                             <constraint firstItem="eQi-lN-1mA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WIM-QZ-ikV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PTW-BI-R7h" secondAttribute="trailing" id="ZXW-rw-mTG"/>
                             <constraint firstItem="Yfo-7X-sWl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cfT-Ii-nKC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c9z-3Q-RqL" secondAttribute="trailing" id="eD4-gW-7DQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TVP-Ob-uu9" secondAttribute="bottom" constant="10" id="esV-hG-CuP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vNJ-Ud-OIu" secondAttribute="trailing" id="fDx-GS-Wwh"/>
                             <constraint firstItem="R9k-1H-rAB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fd6-hm-0wk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kqK-1f-DwS" secondAttribute="trailing" id="gOU-vb-dc5"/>
