@@ -210,10 +210,16 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHj-1D-og4">
                                 <rect key="frame" x="16" y="550" width="46" height="30"/>
                                 <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="DelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWh-Yi-Jky"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVP-Ob-uu9">
                                 <rect key="frame" x="542" y="550" width="30" height="30"/>
                                 <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="SaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eS1-AO-3Kw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

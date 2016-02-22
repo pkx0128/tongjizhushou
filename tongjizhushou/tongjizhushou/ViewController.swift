@@ -39,12 +39,27 @@ class ViewController: UIViewController ,UITextFieldDelegate {
     //总数量
     @IBOutlet weak var Lcount: UILabel!
     
+    //连接button
+    //删除按钮
+    @IBAction func DelButton(sender: UIButton) {
+        
+    }
+    //保存按钮
+    @IBAction func SaveButton(sender: UIButton) {
+        saveMoneyData();
+    }
+  
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //创建数据库
+        makeSqlite();
+        //加载数据库数据
+        initMoneyData();
     }
+    
     //实现点ＴextFiel外区域隐藏键盘
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         Lall.text = "0";
@@ -115,12 +130,44 @@ class ViewController: UIViewController ,UITextFieldDelegate {
         
         
     }
+    
+    
+    //从SQLite加载数据
+    func initMoneyData() {
+        let data = db.query("select * from MoneyData")
+        if data.count > 0 {
+            //获取最后一行数据显示
+            let MyData = data[data.count - 1]
+            T100.text = MyData["count_100"] as? String
+            L100.text = MyData["money_100"] as? String
+        }
+    }
+    
+    //保存数据到SQLite
+    func saveMoneyData() {
+        let count_100 = self.T100.text!
+        let money_100 = self.L100.text!
+        //插入数据库，这里用到了esc字符编码函数，其实是调用bridge.m实现的
+        let sql = "insert into MoneyData(count_100,money_100) values('\(count_100)','\(money_100)')"
+        print("sql: \(sql)")
+        //通过封装的方法执行sql
+        let result = db.execute(sql)
+        print(result)
+    }
 
+    
+    //创建数据库
+    func makeSqlite(){
+        db = SQLiteDB.sharedInstance();
+        db.execute("create table if not exists MoneyData(id integer primary key,count_100 varchar(20),money_100 varchar(20),count_50 varchar(20),money_50 varchar(20),count_20 varchar(20),money_20 varchar(20),count_10 varchar(20),money_10 varchar(20),count_5 varchar(20),money_5 varchar(20),count_1 varchar(20),money_1 varchar(20),count_05 varchar(20),money_05 varchar(20),count_01 varchar(20),money_01 varchar(20))");
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
 
+    
 }
 

@@ -12,6 +12,7 @@
 		4FAC16591C7AF4EB00BC783C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC16561C7AF4EB00BC783C /* SQLiteDB.swift */; };
 		4FAC165A1C7AF4EB00BC783C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC16571C7AF4EB00BC783C /* SQLTable.swift */; };
 		4FAC165B1C7AF4EB00BC783C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC16581C7AF4EB00BC783C /* String-Extras.swift */; };
+		4FAC165D1C7AFFD600BC783C /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC165C1C7AFFD600BC783C /* data.db */; };
 		4FF7427B1C5F48F5007A700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7427A1C5F48F5007A700A /* AppDelegate.swift */; };
 		4FF7427D1C5F48F5007A700A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7427C1C5F48F5007A700A /* ViewController.swift */; };
 		4FF742801C5F48F5007A700A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF7427E1C5F48F5007A700A /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		4FAC16561C7AF4EB00BC783C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		4FAC16571C7AF4EB00BC783C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		4FAC16581C7AF4EB00BC783C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		4FAC165C1C7AFFD600BC783C /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
 		4FF742771C5F48F5007A700A /* 统计助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "统计助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF7427A1C5F48F5007A700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF7427C1C5F48F5007A700A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		4FF7426E1C5F48F5007A700A = {
 			isa = PBXGroup;
 			children = (
+				4FAC165C1C7AFFD600BC783C /* data.db */,
 				4FAC16551C7AF4EB00BC783C /* SQLiteDB */,
 				4FAC16501C7AF21100BC783C /* Bridging-Header.h */,
 				4FAC16491C7AECE900BC783C /* libsqlite3.0.tbd */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF742851C5F48F5007A700A /* LaunchScreen.storyboard in Resources */,
+				4FAC165D1C7AFFD600BC783C /* data.db in Resources */,
 				4FF742821C5F48F5007A700A /* Assets.xcassets in Resources */,
 				4FF742801C5F48F5007A700A /* Main.storyboard in Resources */,
 			);
