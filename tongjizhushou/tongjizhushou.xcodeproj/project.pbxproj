@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				4FAC165C1C7AFFD600BC783C /* data.db */,
-				4FAC16551C7AF4EB00BC783C /* SQLiteDB */,
 				4FAC16501C7AF21100BC783C /* Bridging-Header.h */,
 				4FAC16491C7AECE900BC783C /* libsqlite3.0.tbd */,
+				4FAC16551C7AF4EB00BC783C /* SQLiteDB */,
 				4FF742791C5F48F5007A700A /* tongjizhushou */,
 				4FF7428E1C5F48F5007A700A /* tongjizhushouTests */,
 				4FF742991C5F48F5007A700A /* tongjizhushouUITests */,

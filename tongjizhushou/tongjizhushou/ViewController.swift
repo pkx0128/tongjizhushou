@@ -62,7 +62,9 @@ class ViewController: UIViewController ,UITextFieldDelegate {
     
     //实现点ＴextFiel外区域隐藏键盘
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        //总计
         Lall.text = "0";
+        //总数量
         Lcount.text = "0";
         //计算Ｔ100
         if !((T100.text)!.isEmpty){
@@ -138,8 +140,26 @@ class ViewController: UIViewController ,UITextFieldDelegate {
         if data.count > 0 {
             //获取最后一行数据显示
             let MyData = data[data.count - 1]
-            T100.text = MyData["count_100"] as? String
-            L100.text = MyData["money_100"] as? String
+            T100.text = MyData["count_100"] as? String;
+            L100.text = MyData["money_100"] as? String;
+            T50.text = MyData["count_50"] as? String;
+            L50.text = MyData["money_50"] as? String;
+            T20.text = MyData["count_20"] as? String;
+            L20.text = MyData["money_20"] as? String;
+            T10.text = MyData["count_10"] as? String;
+            L10.text = MyData["money_10"] as? String;
+            T5.text = MyData["count_5"] as? String;
+            L5.text = MyData["money_5"] as? String;
+            T1.text = MyData["count_1"] as? String;
+            L1.text = MyData["money_1"] as? String;
+            T05.text = MyData["count_05"] as? String;
+            L05.text = MyData["money_05"] as? String;
+            T01.text = MyData["count_01"] as? String;
+            L01.text = MyData["money_01"] as? String;
+            startMoney.text = MyData["startMoney"] as? String;
+            Lall.text = MyData["Lall"] as? String;
+            Lcount.text = MyData["Lcount"] as? String;
+            Llast.text = MyData["Llast"] as? String;
         }
     }
     
@@ -147,8 +167,26 @@ class ViewController: UIViewController ,UITextFieldDelegate {
     func saveMoneyData() {
         let count_100 = self.T100.text!
         let money_100 = self.L100.text!
+        let count_50 = self.T50.text!
+        let money_50 = self.L50.text!
+        let count_20 = self.T20.text!
+        let money_20 = self.L20.text!
+        let count_10 = self.T10.text!
+        let money_10 = self.L10.text!
+        let count_5 = self.T5.text!
+        let money_5 = self.L5.text!
+        let count_1 = self.T1.text!
+        let money_1 = self.L1.text!
+        let count_05 = self.T05.text!
+        let money_05 = self.L05.text!
+        let count_01 = self.T01.text!
+        let money_01 = self.L01.text!
+        let VstartMoney = self.startMoney.text!
+        let VLall = self.Lall.text!
+        let VLcount = self.Lcount.text!
+        let vLlast = self.Llast.text!
         //插入数据库，这里用到了esc字符编码函数，其实是调用bridge.m实现的
-        let sql = "insert into MoneyData(count_100,money_100) values('\(count_100)','\(money_100)')"
+        let sql = "insert into MoneyData(count_100,money_100,count_50,money_50,count_20,money_20,count_10,money_10,count_5,money_5,count_1,money_1,count_05,money_05,count_01,money_01,startMoney,Lall,Lcount,Llast) values('\(count_100)','\(money_100)','\(count_50)','\(money_50)','\(count_20)','\(money_20)','\(count_10)','\(money_10)','\(count_5)','\(money_5)','\(count_1)','\(money_1)','\(count_05)','\(money_05)','\(count_01)','\(money_01)','\(VstartMoney)','\(VLall)','\(VLcount)','\(vLlast)')"
         print("sql: \(sql)")
         //通过封装的方法执行sql
         let result = db.execute(sql)
@@ -159,7 +197,7 @@ class ViewController: UIViewController ,UITextFieldDelegate {
     //创建数据库
     func makeSqlite(){
         db = SQLiteDB.sharedInstance();
-        db.execute("create table if not exists MoneyData(id integer primary key,count_100 varchar(20),money_100 varchar(20),count_50 varchar(20),money_50 varchar(20),count_20 varchar(20),money_20 varchar(20),count_10 varchar(20),money_10 varchar(20),count_5 varchar(20),money_5 varchar(20),count_1 varchar(20),money_1 varchar(20),count_05 varchar(20),money_05 varchar(20),count_01 varchar(20),money_01 varchar(20))");
+        db.execute("create table if not exists MoneyData(id integer primary key,count_100 varchar(20),money_100 varchar(20),count_50 varchar(20),money_50 varchar(20),count_20 varchar(20),money_20 varchar(20),count_10 varchar(20),money_10 varchar(20),count_5 varchar(20),money_5 varchar(20),count_1 varchar(20),money_1 varchar(20),count_05 varchar(20),money_05 varchar(20),count_01 varchar(20),money_01 varchar(20),startMoney varchar(20),Lall varchar(20),Lcount varchar(20),Llast varchar(20))");
     }
     
     override func didReceiveMemoryWarning() {
