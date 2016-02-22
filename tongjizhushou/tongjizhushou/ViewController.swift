@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController ,UITextFieldDelegate {
     //定义sqliteDB变量
-    var db : SQLiteDB;
+//    var db : SQLiteDB;
     //连接textField
     @IBOutlet weak var T100: UITextField!
     @IBOutlet weak var T50: UITextField!
