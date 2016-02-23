@@ -42,7 +42,7 @@ class ViewController: UIViewController ,UITextFieldDelegate {
     //连接button
     //删除按钮
     @IBAction func DelButton(sender: UIButton) {
-        
+        delData();
     }
     //保存按钮
     @IBAction func SaveButton(sender: UIButton) {
@@ -193,6 +193,30 @@ class ViewController: UIViewController ,UITextFieldDelegate {
         print(result)
     }
 
+    //创建删除方法
+    func delData(){
+        T100.text = "";
+        L100.text = "0.0";
+        T50.text = "";
+        L50.text = "0.0";
+        T20.text = "";
+        L20.text = "0.0";
+        T10.text = "";
+        L10.text = "0.0";
+        T5.text = "";
+        L5.text = "0.0";
+        T1.text = "";
+        L1.text = "0.0";
+        T05.text = "";
+        L05.text = "0.0";
+        T01.text = "";
+        L01.text = "0.0";
+        startMoney.text = "";
+        Lall.text = "0.0";
+        Lcount.text = "0.0";
+        Llast.text = "0.0";
+        db.execute("delete from MoneyData");
+    }
     
     //创建数据库
     func makeSqlite(){
