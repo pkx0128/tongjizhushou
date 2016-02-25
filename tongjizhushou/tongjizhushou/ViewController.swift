@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UITextFieldDelegate {
+class ViewController: UIViewController ,UITextFieldDelegate , UIAlertViewDelegate {
     //定义sqliteDB变量
     var db:SQLiteDB!
     
@@ -189,8 +189,16 @@ class ViewController: UIViewController ,UITextFieldDelegate {
         let sql = "insert into MoneyData(count_100,money_100,count_50,money_50,count_20,money_20,count_10,money_10,count_5,money_5,count_1,money_1,count_05,money_05,count_01,money_01,startMoney,Lall,Lcount,Llast) values('\(count_100)','\(money_100)','\(count_50)','\(money_50)','\(count_20)','\(money_20)','\(count_10)','\(money_10)','\(count_5)','\(money_5)','\(count_1)','\(money_1)','\(count_05)','\(money_05)','\(count_01)','\(money_01)','\(VstartMoney)','\(VLall)','\(VLcount)','\(vLlast)')"
         print("sql: \(sql)")
         //通过封装的方法执行sql
-        let result = db.execute(sql)
-        print(result)
+         let result = db.execute(sql)
+//        print(result)
+//        保存成功提示
+        if (result != result+1){
+            let al = UIAlertView();
+            al.message = "保存成功";
+            al.addButtonWithTitle("OK");
+            al.show();
+            
+        }
     }
 
     //创建删除方法
@@ -215,7 +223,16 @@ class ViewController: UIViewController ,UITextFieldDelegate {
         Lall.text = "0.0";
         Lcount.text = "0.0";
         Llast.text = "0.0";
-        db.execute("delete from MoneyData");
+        let result = db.execute("delete from MoneyData");
+//        print(result);
+//        删除成功提示
+        if (result != result+1){
+            let al = UIAlertView();
+            al.message = "删除成功";
+            al.addButtonWithTitle("OK");
+            al.show();
+            
+        }
     }
     
     //创建数据库
