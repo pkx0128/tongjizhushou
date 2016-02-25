@@ -190,7 +190,7 @@ class ViewController: UIViewController ,UITextFieldDelegate , UIAlertViewDelegat
         print("sql: \(sql)")
         //通过封装的方法执行sql
          let result = db.execute(sql)
-        print(result)
+//        print(result)
 //        保存成功提示
         if (result != result+1){
             let al = UIAlertView();
@@ -224,7 +224,7 @@ class ViewController: UIViewController ,UITextFieldDelegate , UIAlertViewDelegat
         Lcount.text = "0.0";
         Llast.text = "0.0";
         let result = db.execute("delete from MoneyData");
-        print(result);
+//        print(result);
 //        删除成功提示
         if (result != result+1){
             let al = UIAlertView();
